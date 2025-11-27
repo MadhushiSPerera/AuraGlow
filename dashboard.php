@@ -1,5 +1,5 @@
 <?php
-include '../components/connect.php';
+include 'connect.php';
 
 if(isset($_COOKIE['admin_id'])){
     $admin_id=$_COOKIE['admin_id'];
@@ -15,7 +15,7 @@ if(isset($_COOKIE['admin_id'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AuraGlow - Admin Login Page</title>
-    <link rel="stylesheet" type="text/css" href="../css/admin_style.css">
+    <link rel="stylesheet" type="text/css" href="admin_style.css">
     <!--Font awesome CDN link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!--Boxicons CDN link-->
@@ -23,12 +23,12 @@ if(isset($_COOKIE['admin_id'])){
 </head>
 <body>
     <div class="main-container">
-        <?php include '../components/admin_header.php';?>
+        <?php include 'admin_header.php';?>
        
         <section class="dashboard">
             <div class="heading">
                 <h1>Admin Dashboard</h1>
-                <img src="../images/separator-img.png" alt="searater" class="separator">
+                <img src="home_back.jpg" alt="searater" class="separator">
             </div>
             <div class="box-container">
                 <div class="box">
